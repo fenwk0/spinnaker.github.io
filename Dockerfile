@@ -1,6 +1,6 @@
 # Dockerfile to run Jekyll locally and test the generated site
 # You must mount $(pwd) to /code (this allows pages to be dynamically regenerated without having to rebuild the Dockerfile)
-FROM ruby:2.4.1
+FROM ruby:2.6.9
 RUN apt-get install -y git bzip2 libssl-dev libreadline-dev zlib1g-dev
 RUN gem install bundler
 
